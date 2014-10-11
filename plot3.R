@@ -10,3 +10,5 @@ lines(subdata$dateTime,subdata$Sub_metering_2,type="l",col="red")
 lines(subdata$dateTime,subdata$Sub_metering_3,type="l",col="blue")
 legend("topright",legend=c("sub_metering_1","sub_metering_2","sub_metering_3"),
        col=c("black","red","blue"),lty=c(1,1,1))
+dev.copy(png,"plot3.png")
+dev.off()
