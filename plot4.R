@@ -1,3 +1,11 @@
+d<-read.table("household_power_consumption.txt",
+              header=TRUE,sep=";",colClass="character")
+d$Date<-as.Date(d$Date,"%d/%m/%Y")
+subdata<-subset(d,Date==as.Date("2007-02-01")| Date==as.Date("2007-02-02"))
+
+subdata$dateTime=
+  strptime(paste(subdata$Date, subdata$Time), format="%Y-%m-%d %H:%M:%S")
+  
 png("plot4.png")
 par(mfrow=c(2,2)) ##mar=c(5,4,4,2) see if needed
 
