@@ -5,6 +5,7 @@ subdata<-subset(d,Date==as.Date("2007-02-01")| Date==as.Date("2007-02-02"))
 hist(as.numeric(subdata$Global_active_power),col="red",xlab=
          " Global active Power (kilowatts)",main=" Global active power ")
 dev.copy(png,"plot1.png")
+
 dev.off()
 
 ##?readLines subset using it

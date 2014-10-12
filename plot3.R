@@ -13,4 +13,8 @@ lines(subdata$dateTime,subdata$Sub_metering_3,type="l",col="blue")
 legend("topright",legend=c("sub_metering_1","sub_metering_2","sub_metering_3"),
        col=c("black","red","blue"),lty=c(1,1,1))
 
+<<<<<<< HEAD
 dev.off()
+=======
+dev.off()
+>>>>>>> dc225b5e1c19d659cb861003a13eac297f363b9a
